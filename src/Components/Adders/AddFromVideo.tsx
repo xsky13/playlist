@@ -66,11 +66,12 @@ export default function AddFromVideo({ closeDialog }: { closeDialog: () => void 
 					return;
 				});
 
+			setQueryLoading(false);
+
 			if (!result) return;
 
 			// close the dialog
 			setYoutubeItems([]);
-			setQueryLoading(false);
 			closeDialog();
 			playlist.addLoadingItem(result.id, result.title, result.duration);
 
