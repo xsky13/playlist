@@ -29,7 +29,7 @@ h3 {
 .playlist {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: .5rem;
 	padding-bottom: 2rem;
 	min-height: 1px;
 	width: 100%;
@@ -40,6 +40,13 @@ div.main {
 	width: 30rem;
 	display: block;
 	margin: auto;
+}
+
+.main-actions {
+	background-color: #ededed;
+	padding: .1rem 1.5rem .3rem 1.5rem;
+	border-radius: 10px;
+	margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 588px) {

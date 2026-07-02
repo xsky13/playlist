@@ -104,13 +104,15 @@ function App() {
 	return (
 		<PlaylistContext value={{ items, saveItem, addLoadingItem, updatePercentage, finishLoading, removeItem, toggleFavorite, removeFailedListing, enqueueDownload }}>
 			<div className="main">
-				<AudioPlayer audioRef={audioRef} titleRef={titleRef} />
-				<div className="actions">
-					<div className="tabs">
-						<span className={section == "library" ? "active" : ""} onClick={() => setSection("library")}>Library</span>
-						<span className={section == "favorites" ? "active" : ""} onClick={() => setSection("favorites")}>Favorites</span>
+				<header>
+					<AudioPlayer audioRef={audioRef} titleRef={titleRef} />
+					<div className="main-actions">
+						<div className="tabs">
+							<span className={section == "library" ? "active" : ""} onClick={() => setSection("library")}>Library</span>
+							<span className={section == "favorites" ? "active" : ""} onClick={() => setSection("favorites")}>Favorites</span>
+						</div>
 					</div>
-				</div>
+				</header>
 				<div id="playlist" className="playlist">
 					{
 						visibleItems.map((item, i) =>
