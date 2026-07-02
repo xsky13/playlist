@@ -1,0 +1,59 @@
+header {
+    position: sticky;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+}
+
+.player {
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+}
+
+.player audio {
+    padding: 1rem 0;
+}
+
+#player-title {
+    text-align: left;
+    font-weight: 400;
+}
+
+.player-main {
+    width: 100%;
+    max-width: 500px;
+    margin-top: .5rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#playBtn {
+    font-size: 40px;
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    flex: 1;
+}
