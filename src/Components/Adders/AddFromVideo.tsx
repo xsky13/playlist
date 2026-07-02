@@ -101,7 +101,7 @@ export default function AddFromVideo({ closeDialog }: { closeDialog: () => void 
 				</button>
 			</form>
 			{
-				queryLoading && <img src="/loader.svg" className="loading-img" width="60" />
+				queryLoading && <img src={`${import.meta.env.BASE_URL}/loader.svg`} className="loading-img" width="60" />
 			}
 			{
 				youtubeItems.length != 0 &&

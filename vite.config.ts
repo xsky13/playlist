@@ -4,14 +4,15 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
+	base: '/playlist/',
 	plugins: [react(), VitePWA({
 		registerType: 'autoUpdate',
 		includeAssets: ['play.png', 'loader.svg', 'loader_white.svg'],
 		manifest: {
 			name: 'Playlist',
 			short_name: 'Playlist',
-			start_url: '/',
-			scope: '/',
+			start_url: '/playlist/',
+			scope: '/playlist/',
 			display: 'standalone',
 			background_color: '#0c0c0b',
 			theme_color: '#0c0c0b',

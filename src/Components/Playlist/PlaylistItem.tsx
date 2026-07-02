@@ -34,7 +34,7 @@ export default function PlaylistItem(props: { item: PlaylistItemType, audioEleme
 	return (
 		<div className="playlist-item" id={props.item.id}>
 			<div className="playlist-start">
-				<img src="/play.png" style={{ cursor: "pointer" }} onClick={openSong} width="50" />
+				<img src={`${import.meta.env.BASE_URL}/play.png`} style={{ cursor: "pointer" }} onClick={openSong} width="50" />
 				<div className="details">
 					<h3>{props.item.title}</h3>
 					<span className="subtitle" id={`${props.item.id}-subtitle`}>
@@ -43,7 +43,7 @@ export default function PlaylistItem(props: { item: PlaylistItemType, audioEleme
 								`${props.item.size}MB`
 								:
 								props.item.loading ?
-									<img src="/loader.svg" className="loading-img" width="25" />
+									<img src={`${import.meta.env.BASE_URL}/loader.svg`} className="loading-img" width="25" />
 									: `${props.item.percentage}%`
 						}
 					</span>

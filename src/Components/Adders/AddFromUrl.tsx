@@ -74,7 +74,7 @@ export default function AddFromUrl(props: { closeDialog: () => void }) {
 			<input type="text" name="url" placeholder="Video url..." />
 			<button className="button url-button" id="submitUrlBtn" disabled={loading}>
 				{
-					loading ? <img src="/loader_white.svg" width={25} /> : "Submit"
+					loading ? <img src={`${import.meta.env.BASE_URL}/loader_white.svg`} width={25} /> : "Submit"
 				}
 			</button>
 		</form>
